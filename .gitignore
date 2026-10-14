@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.env
+*.log
+.DS_Store
+uploads/*
+!uploads/.gitkeep
+coverage/
+.vite/
+*.tsbuildinfo
+client/dist/
+server/dist/
