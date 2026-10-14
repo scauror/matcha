@@ -1,0 +1,1 @@
+python3 -c "import quopri,sys; print(quopri.decodestring(sys.stdin.read()).decode())"

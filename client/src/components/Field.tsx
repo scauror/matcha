@@ -9,12 +9,12 @@ type Props = {
 
 export function Field({ label, children, error, hint }: Props) {
   return (
-    <label className="field">
+    <div className="field">
       <span className="field-label">{label}</span>
       {children}
       {hint ? <span className="field-hint">{hint}</span> : null}
       {error ? <span className="field-error">{error}</span> : null}
-    </label>
+    </div>
   );
 }
 

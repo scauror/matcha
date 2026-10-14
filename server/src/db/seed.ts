@@ -78,8 +78,8 @@ async function seed() {
     "Fan de fromage, allergique aux conversations fades.",
   ];
 
-  const BATCH = 5;
-  const TOTAL = 5;
+  const BATCH = 50;
+  const TOTAL = 500;
 
   for (let i = 0; i < TOTAL; i += BATCH) {
     const values: unknown[] = [];
@@ -152,7 +152,7 @@ async function seed() {
     console.log(`Seeded ${Math.min(i + BATCH, TOTAL)} / ${TOTAL}`);
   }
 
-  console.log("Seed done: 5 test profiles.");
+  console.log("Seed done: 500 test profiles.");
   await pool.end();
 }
 
